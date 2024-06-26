@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/elemba/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/elemba/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/elemba/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Configuration.UserSecrets.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/Users/elemba/.nuget/packages/newtonsoft.json/13.0.3</PkgNewtonsoft_Json>
+    <PkgMicrosoft_Extensions_DependencyInjection Condition=" '$(PkgMicrosoft_Extensions_DependencyInjection)' == '' ">/Users/elemba/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0</PkgMicrosoft_Extensions_DependencyInjection>
+    <PkgMicrosoft_Extensions_Logging Condition=" '$(PkgMicrosoft_Extensions_Logging)' == '' ">/Users/elemba/.nuget/packages/microsoft.extensions.logging/8.0.0</PkgMicrosoft_Extensions_Logging>
+    <PkgMicrosoft_Extensions_Hosting Condition=" '$(PkgMicrosoft_Extensions_Hosting)' == '' ">/Users/elemba/.nuget/packages/microsoft.extensions.hosting/8.0.0</PkgMicrosoft_Extensions_Hosting>
+    <PkgMicrosoft_AspNetCore_Http Condition=" '$(PkgMicrosoft_AspNetCore_Http)' == '' ">/Users/elemba/.nuget/packages/microsoft.aspnetcore.http/2.2.2</PkgMicrosoft_AspNetCore_Http>
+    <PkgMicrosoft_AspNetCore_Hosting Condition=" '$(PkgMicrosoft_AspNetCore_Hosting)' == '' ">/Users/elemba/.nuget/packages/microsoft.aspnetcore.hosting/2.2.7</PkgMicrosoft_AspNetCore_Hosting>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/elemba/.nuget/packages/fsharp.core/8.0.300</PkgFSharp_Core>
+    <PkgGiraffe Condition=" '$(PkgGiraffe)' == '' ">/Users/elemba/.nuget/packages/giraffe/6.4.0</PkgGiraffe>
+  </PropertyGroup>
+</Project>

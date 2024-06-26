@@ -1,0 +1,105 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/elemba/dotnetProjects/ColumnCalculationApp/ColumnCalculationApp.fsproj": {}
+  },
+  "projects": {
+    "/Users/elemba/dotnetProjects/ColumnCalculationApp/ColumnCalculationApp.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/elemba/dotnetProjects/ColumnCalculationApp/ColumnCalculationApp.fsproj",
+        "projectName": "ColumnCalculationApp",
+        "projectPath": "/Users/elemba/dotnetProjects/ColumnCalculationApp/ColumnCalculationApp.fsproj",
+        "packagesPath": "/Users/elemba/.nuget/packages/",
+        "outputPath": "/Users/elemba/dotnetProjects/ColumnCalculationApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/elemba/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/8.0.301/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.300, )",
+              "generatePathProperty": true
+            },
+            "Giraffe": {
+              "target": "Package",
+              "version": "[6.4.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load and Length Query</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            margin-top: 0;
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .container form input,
+        .container form button {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .container .result {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Query Load and Length</h1>
+        <form id="query-form">
+            <input type="number" id="loadValue" name="loadValue" placeholder="Enter load value" required>
+            <input type="number" id="lengthValue" name="lengthValue" placeholder="Enter length value" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script>
+        document.getElementById('query-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const loadValue = document.getElementById('loadValue').value;
+            const lengthValue = document.getElementById('lengthValue').value;
+            fetch(`/query?load=${loadValue}&length=${lengthValue}`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('result').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('result').innerText = 'An error occurred. Please try again.';
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+/Users/elemba/dotnetProjects/ColumnCalculationApp/obj/Debug/net8.0/ColumnCalculationApp.AssemblyInfoInputs.cache
+/Users/elemba/dotnetProjects/ColumnCalculationApp/obj/Debug/net8.0/ColumnCalculationApp.AssemblyInfo.fs
